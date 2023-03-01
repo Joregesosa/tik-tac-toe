@@ -5,8 +5,11 @@ function TableContainer(props) {
   return (
     <section>
       <ul>
+
         <li className="items--list">
+
           {props.children}
+          
         </li>
 
       </ul>

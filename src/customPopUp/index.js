@@ -1,17 +1,20 @@
 import React from "react";
+import { GameContext } from "../GameContext";
 import './customPopUp.css'
-function CustomPopUp(props) {
+function CustomPopUp() {
+    const { popUpTitle, gameResult, popUpButtonText, isActive,
+        newGame } = React.useContext(GameContext);
     return (
-        <div className={`customPopup--container ${props.active && 'active'} `}>
+        <div className={`customPopup--container ${isActive && 'active'} `}>
 
 
-            <h2>{props.title}</h2>
+            <h2>{popUpTitle}</h2>
 
-            <h3>{props.subTitle}</h3>
+            <h3>{gameResult}</h3>
 
             <button
-                onClick={props.onClick}
-            >{props.buttonText}</button>
+                onClick={newGame}
+            >{popUpButtonText}</button>
         </div>
     )
 }
