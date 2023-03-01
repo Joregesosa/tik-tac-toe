@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Zeyada', cursive;
+    background-color: #282a35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 35%;
+ min-width: 340px;
+ overflow: hidden; 
+ align-items: center;
+}
