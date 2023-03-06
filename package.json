@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -r https://github.com/Joregesosa/tik-tac-toe"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +40,5 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage":"https://Joregesosa.github.io/tik-tac-toe"
+  "homepage": "https://Joregesosa.github.io/tik-tac-toe"
 }
